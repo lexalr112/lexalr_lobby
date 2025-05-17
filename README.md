@@ -1,1 +1,2 @@
-# lexalr_lobby
+# lexalr_lobby 
+тут будет файл игры каторый я делаю

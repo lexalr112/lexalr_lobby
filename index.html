@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лобби Игры</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; background-color: #f0f0f0; color: #333; }
+        .container { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { color: #4CAF50; }
+        .server-list { list-style: none; padding: 0; }
+        .server-list li { background-color: #e9e9e9; margin-bottom: 10px; padding: 15px; border-radius: 4px; }
+        .server-list strong { color: #555; }
+        .instructions { margin-top: 20px; padding: 15px; background-color: #dff0d8; border: 1px solid #d6e9c6; color: #3c763d; border-radius: 4px;}
+        .footer { margin-top: 30px; text-align: center; font-size: 0.9em; color: #777;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Список Активных Игровых Серверов</h1>
+
+        <div class="instructions">
+            <p><strong>Как стать хостом:</strong></p>
+            <ol>
+                <li>Запустите <code>server.py</code> на своем компьютере.</li>
+                <li>Программа покажет ваш публичный IP (или его нужно узнать, например, на сайте whatismyip.com).</li>
+                <li>Если вы за роутером, <strong>настройте проброс порта 12345</strong> на ваш локальный IP.</li>
+                <li>Отредактируйте этот сайт (файл <code>index.html</code> в репозитории GitHub) и добавьте информацию о вашем сервере ниже.</li>
+            </ol>
+             <p><strong>Как подключиться к игре:</strong></p>
+            <ol>
+                <li>Запустите <code>client.py</code>.</li>
+                <li>Введите IP-адрес и порт (12345) одного из серверов из списка ниже.</li>
+                <li>Нажмите "Подключиться".</li>
+            </ol>
+        </div>
+
+        <h2>Доступные серверы:</h2>
+        <ul class="server-list">
+            <!-- Пример. Хосты должны редактировать этот раздел! -->
+            <li>
+                <strong>Сервер Игрока1:</strong> <code>123.45.67.89:12345</code> (Замените на реальный IP и порт)
+                <br><em>Комментарий: Играем до 22:00!</em>
+            </li>
+            <li>
+                <strong>Тестовый Сервер:</strong> <code>another.server.ip:12345</code>
+                <br><em>Комментарий: Просто тест.</em>
+            </li>
+            <!-- Добавляйте сюда новые серверы -->
+        </ul>
+
+        <div class="footer">
+            <p>Это простой статический сайт. Обновление списка серверов происходит вручную через редактирование HTML на GitHub.</p>
+        </div>
+    </div>
+</body>
+</html>
